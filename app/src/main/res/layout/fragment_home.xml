@@ -1,0 +1,335 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/header"
+            android:adjustViewBounds="true"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/header" />
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:paddingTop="50dp"
+            android:paddingLeft="90dp"
+            android:paddingRight="90dp"
+            android:id="@+id/logo"
+            android:adjustViewBounds="true"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/logo" />
+
+        <ScrollView
+            android:layout_marginTop="16dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:paddingBottom="32dp"
+                android:layout_margin="16dp"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <com.yarolegovich.discretescrollview.DiscreteScrollView
+                    android:visibility="gone"
+                    android:layout_gravity="center_horizontal"
+                    android:id="@+id/carousel"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+
+                <include layout="@layout/banner_layout_item"/>
+
+                <FrameLayout
+                    android:layout_marginTop="16dp"
+                    android:background="@drawable/layout_bg"
+                    android:id="@+id/content"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" >
+
+                    <LinearLayout
+                        android:padding="20dp"
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:text="Mulai Belajar"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content" />
+
+                        <LinearLayout
+                            android:orientation="vertical"
+                            android:layout_marginTop="8dp"
+                            android:background="@drawable/header_content"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <TextView
+                                android:paddingTop="8dp"
+                                android:paddingLeft="16dp"
+                                android:paddingRight="16dp"
+                                android:textColor="@android:color/white"
+                                android:text="Kategori"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content" />
+
+                            <AutoCompleteTextView
+                                android:textAppearance="@style/Base.TextAppearance.AppCompat.Small"
+                                android:padding="8dp"
+                                android:layout_marginRight="16dp"
+                                android:layout_marginLeft="16dp"
+                                android:background="@android:color/white"
+                                android:id="@+id/category"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:hint="Pilih"
+                                android:dropDownHeight="100dp"
+                                android:cursorVisible="false"
+                                android:maxLines="1"
+                                android:focusable="false"
+                                android:clickable="true"
+                                android:inputType="none"
+                                android:drawableRight="@drawable/ic_baseline_play_arrow_24px_blue"
+                                />
+
+                            <TextView
+                                android:paddingTop="8dp"
+                                android:paddingLeft="16dp"
+                                android:paddingRight="16dp"
+                                android:textColor="@android:color/white"
+                                android:text="Materi"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content" />
+
+                            <AutoCompleteTextView
+                                android:textAppearance="@style/Base.TextAppearance.AppCompat.Small"
+                                android:padding="8dp"
+                                android:layout_marginRight="16dp"
+                                android:layout_marginLeft="16dp"
+                                android:layout_marginBottom="16dp"
+                                android:background="@android:color/white"
+                                android:id="@+id/course"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:hint="Pilih"
+                                android:dropDownHeight="100dp"
+                                android:cursorVisible="false"
+                                android:maxLines="1"
+                                android:focusable="false"
+                                android:clickable="true"
+                                android:inputType="none"
+                                android:drawableRight="@drawable/ic_baseline_play_arrow_24px_blue"
+                                />
+
+                        </LinearLayout>
+
+                        <TextView
+                            android:paddingTop="8dp"
+                            android:paddingLeft="16dp"
+                            android:paddingRight="16dp"
+                            android:text="Pilih Durasi Belajar"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content" />
+
+                        <LinearLayout
+                            android:orientation="horizontal"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <ImageView
+                                android:padding="8dp"
+                                android:src="@drawable/menit_60"
+                                android:layout_weight="1"
+                                android:layout_width="0dp"
+                                android:layout_height="80dp" />
+                            <ImageView
+                                android:padding="8dp"
+                                android:src="@drawable/menit_90"
+                                android:layout_weight="1"
+                                android:layout_width="0dp"
+                                android:layout_height="80dp" />
+                            <ImageView
+                                android:padding="8dp"
+                                android:src="@drawable/menit_120"
+                                android:layout_weight="1"
+                                android:layout_width="0dp"
+                                android:layout_height="80dp" />
+
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <LinearLayout
+                                android:orientation="vertical"
+                                android:layout_weight="1"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content">
+
+                                <TextView
+                                    android:paddingTop="8dp"
+                                    android:paddingLeft="16dp"
+                                    android:paddingRight="16dp"
+                                    android:text="Waktu Belajar"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content" />
+
+                                <LinearLayout
+                                    android:padding="8dp"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="horizontal">
+
+                                    <ImageView
+                                        android:layout_marginRight="8dp"
+                                        android:layout_width="25dp"
+                                        android:layout_height="25dp"
+                                        android:src="@drawable/study" />
+
+                                    <AutoCompleteTextView
+                                        android:textColor="#808080"
+                                        android:id="@+id/study_time"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:background="@android:color/white"
+                                        android:clickable="true"
+                                        android:cursorVisible="false"
+                                        android:drawableRight="@drawable/ic_baseline_play_arrow_24px_blue"
+                                        android:dropDownHeight="100dp"
+                                        android:focusable="false"
+                                        android:hint="Pilih"
+                                        android:inputType="none"
+                                        android:maxLines="1"
+                                        android:textAppearance="@style/Base.TextAppearance.AppCompat.Small" />
+
+                                </LinearLayout>
+
+                            </LinearLayout>
+                            <LinearLayout
+                                android:orientation="vertical"
+                                android:layout_weight="1"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content">
+
+                                <TextView
+                                    android:paddingTop="8dp"
+                                    android:paddingLeft="16dp"
+                                    android:paddingRight="16dp"
+                                    android:text="Tanggal"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content" />
+
+                                <LinearLayout
+                                    android:orientation="horizontal"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content">
+
+                                    <LinearLayout
+                                        android:padding="8dp"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:orientation="horizontal">
+
+                                        <ImageView
+                                            android:layout_marginRight="8dp"
+                                            android:layout_width="25dp"
+                                            android:layout_height="25dp"
+                                            android:src="@drawable/date" />
+
+                                        <AutoCompleteTextView
+                                            android:id="@+id/date"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="match_parent"
+                                            android:background="@android:color/white"
+                                            android:clickable="true"
+                                            android:cursorVisible="false"
+                                            android:drawableRight="@drawable/ic_baseline_play_arrow_24px_blue"
+                                            android:dropDownHeight="100dp"
+                                            android:focusable="false"
+                                            android:textColor="@android:color/black"
+                                            android:hint="Pilih"
+                                            android:inputType="none"
+                                            android:maxLines="1"
+                                            android:textAppearance="@style/Base.TextAppearance.AppCompat.Small" />
+
+                                    </LinearLayout>
+
+                                </LinearLayout>
+                            </LinearLayout>
+
+
+
+                        </LinearLayout>
+
+                        <TextView
+                            android:paddingTop="8dp"
+                            android:paddingLeft="16dp"
+                            android:paddingRight="16dp"
+                            android:text="Pilih Guru"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content" />
+
+                        <LinearLayout
+                            android:padding="8dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <ImageView
+                                android:layout_marginRight="8dp"
+                                android:layout_width="25dp"
+                                android:layout_height="25dp"
+                                android:src="@drawable/location_marker" />
+
+                            <AutoCompleteTextView
+                                android:id="@+id/teacher"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:background="@android:color/white"
+                                android:clickable="true"
+                                android:cursorVisible="false"
+                                android:drawableRight="@drawable/ic_baseline_play_arrow_24px_blue"
+                                android:dropDownHeight="100dp"
+                                android:focusable="false"
+                                android:hint="Guru dengan lokasi terkini"
+                                android:inputType="none"
+                                android:maxLines="1"
+                                android:textAppearance="@style/Base.TextAppearance.AppCompat.Small" />
+
+                        </LinearLayout>
+                        <LinearLayout
+                            android:padding="8dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <ImageView
+                                android:layout_marginRight="8dp"
+                                android:layout_width="25dp"
+                                android:layout_height="25dp"
+                                android:src="@drawable/star" />
+
+                            <TextView
+                                android:id="@+id/favorite_teacher"
+                                android:textColor="@color/colorPrimary"
+                                android:layout_gravity="center_vertical"
+                                android:paddingTop="8dp"
+                                android:text="Pilih Guru Favorit ?"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content" />
+                        </LinearLayout>
+                    </LinearLayout>
+                </FrameLayout>
+            </LinearLayout>
+        </ScrollView>
+
+    </LinearLayout>
+</FrameLayout>

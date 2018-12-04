@@ -1,0 +1,587 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".FavoriteTeacherDetailActivity">
+
+    <android.support.v7.widget.Toolbar
+        android:elevation="2dp"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/toolbar"
+        app:theme="@style/ToolbarColoredBackArrow"
+        app:popupTheme="@style/AppTheme"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="?attr/actionBarSize"
+        android:background="?attr/colorPrimary">
+
+        <TextView
+            android:layout_marginRight="8dp"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+            android:text="Rincian"
+            android:textColor="@android:color/white"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </android.support.v7.widget.Toolbar>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:paddingBottom="32dp"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <android.support.v7.widget.CardView
+                android:layout_marginRight="16dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="16dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:padding="8dp"
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <ImageView
+                            android:padding="8dp"
+                            android:adjustViewBounds="true"
+                            android:layout_gravity="center"
+                            android:src="@drawable/profile_placeholder"
+                            android:layout_weight="2"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content" />
+
+                        <LinearLayout
+                            android:orientation="vertical"
+                            android:layout_weight="4"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content">
+
+                            <LinearLayout
+                                android:layout_marginTop="8dp"
+                                android:orientation="horizontal"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content">
+
+                                <TextView
+                                    android:paddingLeft="8dp"
+                                    android:layout_weight="1"
+                                    android:textSize="26sp"
+                                    android:text="Muchtar Latif"
+                                    android:id="@+id/name"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content" />
+
+
+                                <ImageView
+                                    android:layout_marginRight="16dp"
+                                    android:layout_gravity="center_vertical"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:src="@drawable/next_arrow" />
+
+                            </LinearLayout>
+
+                            <TextView
+                                android:layout_marginBottom="4dp"
+                                android:paddingLeft="8dp"
+                                android:textSize="10sp"
+                                android:id="@+id/university"
+                                android:layout_below="@id/name"
+                                android:text="Universitas Padjajaran"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content" />
+
+                            <View
+                                android:layout_marginLeft="4dp"
+                                android:layout_marginRight="4dp"
+                                android:background="@android:color/darker_gray"
+                                android:layout_width="match_parent"
+                                android:layout_height="1dp"/>
+
+                            <LinearLayout
+                                android:layout_marginTop="4dp"
+                                android:paddingLeft="8dp"
+                                android:orientation="horizontal"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content">
+
+                                <LinearLayout
+                                    android:orientation="vertical"
+                                    android:layout_weight="5"
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content">
+
+                                    <TextView
+                                        android:text="Biaya mengajar"
+                                        android:textSize="10sp"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content" />
+
+                                    <TextView
+                                        android:text="Rp 20.000/jam"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content" />
+
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:orientation="vertical"
+                                    android:layout_weight="3"
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content">
+
+                                    <TextView
+                                        android:textSize="10sp"
+                                        android:text="Rate"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content" />
+
+                                    <LinearLayout
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content">
+
+                                        <ImageView
+                                            android:paddingTop="2dp"
+                                            android:paddingRight="2dp"
+                                            android:paddingBottom="2dp"
+                                            android:src="@drawable/star"
+                                            android:layout_width="14dp"
+                                            android:layout_height="14dp" />
+                                        <ImageView
+                                            android:paddingTop="2dp"
+                                            android:paddingRight="2dp"
+                                            android:paddingBottom="2dp"
+                                            android:src="@drawable/star"
+                                            android:layout_width="14dp"
+                                            android:layout_height="14dp" />
+                                        <ImageView
+                                            android:paddingTop="2dp"
+                                            android:paddingRight="2dp"
+                                            android:paddingBottom="2dp"
+                                            android:src="@drawable/star"
+                                            android:layout_width="14dp"
+                                            android:layout_height="14dp" />
+                                        <ImageView
+                                            android:paddingTop="2dp"
+                                            android:paddingRight="2dp"
+                                            android:paddingBottom="2dp"
+                                            android:src="@drawable/star"
+                                            android:layout_width="14dp"
+                                            android:layout_height="14dp" />
+                                        <ImageView
+                                            android:paddingTop="2dp"
+                                            android:paddingRight="2dp"
+                                            android:paddingBottom="2dp"
+                                            android:src="@drawable/star"
+                                            android:layout_width="14dp"
+                                            android:layout_height="14dp" />
+
+                                    </LinearLayout>
+
+                                    <TextView
+                                        android:text="20 Ulasan"
+                                        android:textSize="10sp"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content" />
+                                </LinearLayout>
+
+                            </LinearLayout>
+
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+                    <View
+                        android:layout_marginTop="16dp"
+                        android:layout_marginLeft="4dp"
+                        android:layout_marginRight="4dp"
+                        android:background="@android:color/darker_gray"
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"/>
+
+                    <TextView
+                        android:padding="8dp"
+                        android:text="Pengalaman mengajar professional lebih dari 2 tahun. Alhamdulillah saya masih ingin mengajar begitu juga murid murid saya jadi makin tinggi semangat belajarnya"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+
+                    <LinearLayout
+                        android:padding="8dp"
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <ImageView
+                            android:layout_marginRight="16dp"
+                            android:src="@drawable/location_marker"
+                            android:layout_width="24dp"
+                            android:layout_height="24dp" />
+
+                        <TextView
+                            android:textColor="@color/colorPrimary"
+                            android:text="Mengajar di kota"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+
+                    </LinearLayout>
+
+                    <TextView
+                        android:padding="8dp"
+                        android:text="Kota Bandung, Kabupaten Bandung barat"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+
+                    <LinearLayout
+                        android:padding="8dp"
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <ImageView
+                            android:layout_marginRight="16dp"
+                            android:src="@drawable/graduate"
+                            android:layout_width="24dp"
+                            android:layout_height="24dp" />
+
+                        <TextView
+                            android:textColor="@color/colorPrimary"
+                            android:text="Mengajar di kota"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+
+                    </LinearLayout>
+
+                    <TextView
+                        android:padding="8dp"
+                        android:text="S1 UPI, Sastra Inggris \nSMAN 1 Bandung"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:layout_marginRight="16dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="16dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+
+                <View
+                    android:layout_marginLeft="4dp"
+                    android:layout_marginRight="4dp"
+                    android:background="@color/colorPrimary"
+                    android:layout_width="match_parent"
+                    android:layout_height="8dp"/>
+
+                <LinearLayout
+                    android:layout_margin="16dp"
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
+                        android:textColor="@color/colorPrimary"
+                        android:padding="8dp"
+                        android:textAllCaps="true"
+                        android:textAlignment="center"
+                        android:text="tentang"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+
+                    <View
+                        android:layout_marginLeft="4dp"
+                        android:layout_marginRight="4dp"
+                        android:background="@android:color/darker_gray"
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"/>
+
+                    <TextView
+                        android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
+                        android:textColor="@color/colorPrimary"
+                        android:padding="8dp"
+                        android:textAllCaps="true"
+                        android:textAlignment="center"
+                        android:text="pengalaman"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+
+                    <View
+                        android:layout_marginLeft="4dp"
+                        android:layout_marginRight="4dp"
+                        android:background="@android:color/darker_gray"
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"/>
+
+                    <TextView
+                        android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
+                        android:textColor="@color/colorPrimary"
+                        android:padding="8dp"
+                        android:textAllCaps="true"
+                        android:textAlignment="center"
+                        android:text="jadwal mengajar"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+
+                    <View
+                        android:layout_marginLeft="4dp"
+                        android:layout_marginRight="4dp"
+                        android:background="@android:color/darker_gray"
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"/>
+
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <android.support.v7.widget.CardView
+                    android:layout_marginRight="16dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginBottom="20dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:layout_margin="16dp"
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
+                            android:padding="8dp"
+                            android:text="Review (20)"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content" />
+
+
+                        <android.support.v7.widget.CardView
+                            xmlns:android="http://schemas.android.com/apk/res/android"
+                            xmlns:tools="http://schemas.android.com/tools"
+                            android:layout_marginRight="16dp"
+                            android:layout_marginLeft="15dp"
+                            android:layout_marginTop="16dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <LinearLayout
+                                android:layout_marginBottom="20dp"
+                                android:orientation="horizontal"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content">
+
+                                <ImageView
+                                    android:padding="16dp"
+                                    android:adjustViewBounds="true"
+                                    android:layout_gravity="center"
+                                    android:src="@drawable/profile_placeholder"
+                                    android:layout_weight="2"
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content" />
+
+                                <LinearLayout
+                                    android:orientation="vertical"
+                                    android:layout_weight="4"
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content">
+
+
+                                    <LinearLayout
+                                        android:layout_marginTop="4dp"
+                                        android:paddingLeft="8dp"
+                                        android:orientation="horizontal"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content">
+
+                                        <LinearLayout
+                                            android:orientation="vertical"
+                                            android:layout_weight="5"
+                                            android:layout_width="0dp"
+                                            android:layout_height="wrap_content">
+
+                                            <TextView
+                                                android:text="Ahmad W"
+                                                android:layout_width="match_parent"
+                                                android:layout_height="wrap_content" />
+
+                                            <TextView
+                                                android:textSize="10sp"
+                                                android:text="Rp 20.000/jam"
+                                                android:layout_width="match_parent"
+                                                android:layout_height="wrap_content" />
+
+                                        </LinearLayout>
+
+                                        <LinearLayout
+                                            android:orientation="vertical"
+                                            android:layout_weight="3"
+                                            android:layout_width="0dp"
+                                            android:layout_height="wrap_content">
+
+                                            <LinearLayout
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content">
+
+                                                <ImageView
+                                                    android:paddingTop="2dp"
+                                                    android:paddingRight="2dp"
+                                                    android:paddingBottom="2dp"
+                                                    android:src="@drawable/star"
+                                                    android:layout_width="14dp"
+                                                    android:layout_height="14dp" />
+                                                <ImageView
+                                                    android:paddingTop="2dp"
+                                                    android:paddingRight="2dp"
+                                                    android:paddingBottom="2dp"
+                                                    android:src="@drawable/star"
+                                                    android:layout_width="14dp"
+                                                    android:layout_height="14dp" />
+                                                <ImageView
+                                                    android:paddingTop="2dp"
+                                                    android:paddingRight="2dp"
+                                                    android:paddingBottom="2dp"
+                                                    android:src="@drawable/star"
+                                                    android:layout_width="14dp"
+                                                    android:layout_height="14dp" />
+                                                <ImageView
+                                                    android:paddingTop="2dp"
+                                                    android:paddingRight="2dp"
+                                                    android:paddingBottom="2dp"
+                                                    android:src="@drawable/star"
+                                                    android:layout_width="14dp"
+                                                    android:layout_height="14dp" />
+                                                <ImageView
+                                                    android:paddingTop="2dp"
+                                                    android:paddingRight="2dp"
+                                                    android:paddingBottom="2dp"
+                                                    android:src="@drawable/star"
+                                                    android:layout_width="14dp"
+                                                    android:layout_height="14dp" />
+
+                                            </LinearLayout>
+
+                                            <TextView
+                                                android:text="18/juli/2018"
+                                                android:textSize="10sp"
+                                                android:layout_width="match_parent"
+                                                android:layout_height="wrap_content" />
+                                        </LinearLayout>
+
+                                    </LinearLayout>
+                                    <TextView
+                                        android:layout_marginBottom="4dp"
+                                        android:paddingLeft="8dp"
+                                        android:textSize="10sp"
+                                        android:layout_below="@id/name"
+                                        android:textColor="@color/colorPrimary"
+                                        android:text="Bahasa Inggris SD"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content" />
+
+
+                                    <TextView
+                                        android:layout_marginBottom="4dp"
+                                        android:paddingLeft="8dp"
+                                        android:textSize="10sp"
+                                        android:layout_below="@id/name"
+                                        android:text="Metode ngajarnya asyik banget !"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content" />
+                                </LinearLayout>
+
+                            </LinearLayout>
+
+                        </android.support.v7.widget.CardView>
+
+                    </LinearLayout>
+
+                </android.support.v7.widget.CardView>
+                <Button
+                    android:layout_alignParentBottom="true"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:layout_marginLeft="64dp"
+                    android:layout_marginRight="64dp"
+                    android:background="@drawable/layout_bg_orange"
+                    android:text="Selengkapnya"
+                    android:textColor="@android:color/white" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <android.support.v7.widget.CardView
+                    android:layout_marginRight="16dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginBottom="20dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:paddingBottom="16dp"
+                        android:layout_marginBottom="32dp"
+                        android:padding="8dp"
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
+                            android:padding="8dp"
+                            android:textStyle="bold"
+                            android:text="Pesan Guru"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content" />
+
+                        <TextView
+                            android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
+                            android:padding="8dp"
+                            android:text="Cocok dengan guru dibawah ini? tekan tombol dibawah untuk belajar sekarang"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content" />
+
+                    </LinearLayout>
+                </android.support.v7.widget.CardView>
+                <Button
+                    android:layout_alignParentBottom="true"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:layout_marginLeft="64dp"
+                    android:layout_marginRight="64dp"
+                    android:background="@drawable/layout_bg_orange"
+                    android:text="Belajar Sekarang"
+                    android:textColor="@android:color/white" />
+            </RelativeLayout>
+        </LinearLayout>
+
+    </ScrollView>
+
+
+</LinearLayout>

@@ -1,0 +1,33 @@
+<resources>
+    <string name="app_name">Privat Go</string>
+
+    <string-array name="school_level">
+        <item>SD</item>
+        <item>SMP</item>
+        <item>SMA</item>
+    </string-array>
+    <string name="title_activity_home">HomeActivity</string>
+    <string name="title_home">Home</string>
+    <string name="title_notifications">Notifications</string>
+    <string name="title_profil">Profil</string>
+    <string name="title_activity_maps">Map</string>
+    <string-array name="category">
+        <item>TK/PAUD</item>
+        <item>SD</item>
+        <item>SMP</item>
+        <item>SMA</item>
+    </string-array>
+    <string-array name="course">
+        <item>Matematika</item>
+        <item>Kimia</item>
+        <item>Fisika</item>
+        <item>Biologi</item>
+        <item>B.Inggris</item>
+        <item>B.Indonesia</item>
+        <item>B.Arab</item>
+        <item>B.Jepang</item>
+    </string-array>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

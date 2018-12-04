@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:layout_margin="8dp"
+    android:background="@drawable/layout_bg"
+    android:padding="24dp"
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="260dp">
+
+    <ImageView
+        android:id="@+id/icon"
+        android:src="@drawable/lamp"
+        android:layout_width="match_parent"
+        android:layout_height="100dp" />
+
+    <TextView
+        android:layout_marginTop="16dp"
+        android:layout_below="@+id/icon"
+        android:id="@+id/transaction_title"
+        android:textAlignment="center"
+        android:text="Transaksi Berhasil"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
+        android:id="@+id/instruction"
+        android:layout_below="@+id/transaction_title"
+        android:textAlignment="center"
+        android:text="Chat guru Privat mu Sekarang !"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <Button
+        android:id="@+id/chat"
+        android:layout_marginTop="8dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/instruction"
+        android:background="@drawable/layout_bg_orange"
+        android:text="Chat"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:textColor="@android:color/white"
+        android:textAllCaps="false"
+        android:layout_width="match_parent"
+        android:layout_height="40dp" />
+
+</RelativeLayout>

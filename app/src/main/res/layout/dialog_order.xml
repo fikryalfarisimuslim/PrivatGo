@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:layout_margin="8dp"
+    android:background="@drawable/layout_bg"
+    android:padding="24dp"
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="260dp">
+
+    <TextView
+        android:id="@+id/title"
+        android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
+        android:text="Rincian Tarif"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/transport_price_title"
+        android:layout_below="@id/title"
+        android:layout_marginTop="16dp"
+        android:text="Biaya Transportasi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:layout_below="@id/transport_price_title"
+        android:id="@+id/teaching_price_title"
+        android:text="Biaya Mengajar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/total_price"
+        android:layout_marginTop="8dp"
+        android:layout_below="@id/line"
+        android:textColor="@color/colorPrimary"
+        android:text="Total"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:layout_alignBaseline="@id/transport_price_title"
+        android:text="6000"
+        android:layout_alignParentRight="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:layout_alignBaseline="@id/teaching_price_title"
+        android:text="20000"
+        android:layout_alignParentRight="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:textColor="@color/colorPrimary"
+        android:layout_alignBaseline="@id/total_price"
+        android:text="26000"
+        android:layout_alignParentRight="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <EditText
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="32dp"
+        android:textSize="14sp"
+        android:layout_below="@id/total_price"
+        android:id="@+id/input_kode_kupon"
+        android:hint="Masukan kode kupon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <Button
+        android:id="@+id/validate"
+        android:layout_alignBaseline="@id/input_kode_kupon"
+        android:layout_toRightOf="@id/input_kode_kupon"
+        android:textAllCaps="false"
+        android:textColor="@android:color/white"
+        android:background="@drawable/layout_bg_blue"
+        android:text="Validasi"
+        android:layout_width="65dp"
+        android:layout_height="40dp" />
+
+    <Button
+        android:id="@+id/ok"
+        android:layout_alignBaseline="@id/input_kode_kupon"
+        android:layout_alignParentRight="true"
+        android:textAllCaps="false"
+        android:textColor="@android:color/white"
+        android:background="@drawable/layout_bg_orang_rect"
+        android:text="OKE"
+        android:layout_width="65dp"
+        android:layout_height="40dp" />
+
+    <View
+        android:id="@+id/line"
+        android:layout_marginTop="8dp"
+        android:layout_below="@id/teaching_price_title"
+        android:background="@color/colorPrimary"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"/>
+
+</RelativeLayout>
